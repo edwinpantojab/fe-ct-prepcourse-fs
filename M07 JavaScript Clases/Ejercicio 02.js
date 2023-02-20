@@ -6,21 +6,21 @@ class Persona {
    // Debe tener las propiedades: "nombre", "apellido", "edad" y "domicilio".
    // Debe tener un método llamado "detalle" que nos devuelva un objeto con las propiedades de la persona y
    // sus valores.
-   constructor (nombre, apellido, edad, domicilio){
-     this.nombre = nombre;
-     this.apellido = apellido;
-     this.edad = apellido;
-     this.domicilio = domicilio;
-     this.detalle = function (){
-      return {
-         Nombre: this.nombre,
-         Apellido: this.apellido,
-         Edad: this.edad,
-         Domicilio: this.domicilio,
-
+   constructor(nombre, apellido, edad, domicilio) {
+        // Tu código:
+        this.nombre = nombre,
+        this.apellido = apellido,
+        this.edad = edad,
+        this.domicilio = domicilio
+        this.detalle = function() {
+          return { 
+            nombre: this.nombre,
+            apellido: this.apellido,
+            edad: this.edad,
+            domicilio: this.domicilio
+          }
+        }
       }
-     }
-   }
 }
 
 function crearInstanciaPersona(nombre, apellido, edad, domicilio) {
@@ -29,7 +29,7 @@ function crearInstanciaPersona(nombre, apellido, edad, domicilio) {
    // Retornar la instancia creada.
    // Tu código:
    const persona = new Persona(nombre, apellido, edad, domicilio);
-   return persona;
+  return persona;
 }
 
 function agregarMetodo() {

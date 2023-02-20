@@ -138,25 +138,23 @@ describe('JAVASCRIPT II', function () {
       });
    });
 
-   describe('operadoresLogicos(num1, num2, num3)', function () {
-      it("Debe retornar 'Numero 1 es mayor y positivo' si num1 es positivo y mayor que num2 y num3", function () {
-         expect(operadoresLogicos(50, 2, 15)).toBe(
-            'Numero 1 es mayor y positivo'
-         );
+   describe('operadoresLogicos(num1, num2, num3)', function() {
+      it('should return \'Número 1 es mayor y positivo\' if num1 is positive and if it is greater than num2 and num3', function() {
+        expect(operadoresLogicos(50, 2, 15)).toBe('Número 1 es mayor y positivo');
       });
-      it("Debe retornar 'Hay negativos' si alguno de los argumentos es negativo", function () {
-         expect(operadoresLogicos(-1, 50, 2)).toBe('Hay negativos');
+      it('should return \'Hay negativos\' if any of the arguments are negative', function() {
+        expect(operadoresLogicos(80, -1, 2)).toBe('Hay negativos');
       });
-      it('Debe retornar (num3 + 1) si num3 es mayor que num1 y num2', function () {
-         expect(operadoresLogicos(1, 3, 10)).toBe(11);
+      it('should return num3 + 1 if num3 is greater than num1 and num2', function() {
+        expect(operadoresLogicos(1, 3, 10)).toBe(11);
       });
-      it("Debe retornar 'Error' si todos los argumentos son igual a cero", function () {
-         expect(operadoresLogicos(0, 0, 0)).toBe('Error');
+      it('should return \'Error\' if any of the arguments are equal 0', function() {
+        expect(operadoresLogicos(1, 0, 10)).toBe('Error');
       });
-      it('Debe retornar false si no se coincide con alguna de las opciones mencionadas', function () {
-         expect(operadoresLogicos(10, 30, 6)).toBe(false);
+      it('should return false if none of the conditions are met', function() {
+        expect(operadoresLogicos(10, 30, 6)).toBe(false);
       });
-   });
+    });
 
    describe('esPrimo(num)', function () {
       it('Debe retornar True si num es primo', function () {

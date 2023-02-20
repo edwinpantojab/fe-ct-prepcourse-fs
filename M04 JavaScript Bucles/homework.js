@@ -145,8 +145,7 @@ function esEntero(num) {
    // if(num === 1 || num === -10 || num === 0)return true;
    // if(num === 0.8)return false;
    //return Number.isInteger(num)
-   if(Math.floor(num === 1 || num === 0 || num < -1 || num > 1))return true;
-   return false;
+   return num % 1 === 0;
    
 }
 // console.log(esEntero(0.5))//.toBe(false);
@@ -194,8 +193,7 @@ function operadoresLogicos(num1, num2, num3) {
     else {
       return false;
     }
-    
-   
+     
   }
 //   console.log(operadoresLogicos(50, 2, 15))//.toBe('Numero 1 es mayor y positivo');
 //   console.log(operadoresLogicos(-1, 50, 2))//.toBe('Hay negativos');
@@ -209,12 +207,14 @@ function esPrimo(num) {
    // [Pista 1]: un número primo sólo es divisible por sí mismo y por 1.
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
-   if (numero == 0 || numero == 1 || numero == 4) return false;
-	for (let x = 2; x < numero / 2; x++) {
-		if (numero % x == 0) return false;
-	}
-	// Si no se pudo dividir por ninguno de los de arriba, sí es primo
-	return true;
+   if( num < 2) return false;
+   if(num === 2) return true;
+   for(var i = 2; i < num; i++) {
+     if(num % i === 0) {
+       return false;
+     }
+   }
+   return true;
 }
 // console.log(esPrimo(7))//.toBe(true);
 // console.log(esPrimo(97))//.toBe(true);

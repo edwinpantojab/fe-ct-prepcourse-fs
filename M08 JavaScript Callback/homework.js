@@ -7,8 +7,8 @@ function mayuscula(nombre) {
    // Tu código:
    return nombre[0].toUpperCase() + nombre.slice(1);
 }
-console.log(mayuscula('mario'))//.toBe('Mario');
-console.log(mayuscula('ana'))//.toBe('Ana');
+// console.log(mayuscula('mario'))//.toBe('Mario');
+// console.log(mayuscula('ana'))//.toBe('Ana');
 
 function invocarCallback(cb) {
    // Invoca/ejecuta el callback `cb`.
@@ -34,11 +34,10 @@ function sumarArray(arrayOfNumbers, cb) {
    // Este resultado debes pasárselo como argumento al callback recibido.
    // [NOTA]: no debes reotrnar nada.
    // Tu código:
-   let suma = [];
-   for(let i = 0; i < arrayOfNumbers.length; i++) {
-      suma = suma.push(arrayOfNumbers[i]);
-   }
-   cb(suma);
+   var sumaTotal = arrayOfNumbers.reduce(function(acc, curr) {
+      return acc + curr;
+    },0);
+    cb(sumaTotal);
 }
 //console.log(sumarArray(cb))//.toEqual([1, 2, 3, 4, 5]);
 
@@ -69,12 +68,12 @@ function filter(arrayOfStrings) {
    // Luego retorna un nuevo arreglo con estos elementos.
    // Tu código:
    var nuevoArray = [];
-   for(let i = 0; i < array.length; i++) {
-      if(array[i][0] === "a"){
-         nuevoArray.push(array[i])
-      }
-   }
-      return  nuevoArray;
+  for(let i = 0; i<arrayOfStrings.length; i++) {
+    if(arrayOfStrings[i][0] === "a") {
+      nuevoArray.push(arrayOfStrings[i])
+    }
+  }
+  return nuevoArray;
    
 }
 

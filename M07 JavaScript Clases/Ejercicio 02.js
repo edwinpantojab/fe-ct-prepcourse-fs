@@ -22,6 +22,30 @@ class Persona {
         }
       }
 }
+// const nuevaPersona = new Persona(
+//   'Juan',
+//   'Pérez',
+//   22,
+//   'Saavedra 123'
+// );
+// console.log(nuevaPersona)//.toBeInstanceOf(Persona);
+// console.log(nuevaPersona.nombre)//.toBe('Juan');
+// console.log(nuevaPersona.apellido)//.toBe('Pérez');
+// console.log(nuevaPersona.edad)//.toBe(22);
+// console.log(nuevaPersona.domicilio)//.toBe('Saavedra 123');
+
+// const nuevaPersona = new Persona(
+//   'Juan',
+//   'Pérez',
+//   22,
+//   'Saavedra 123'
+// );
+// console.log(nuevaPersona.detalle())//.toStrictEqual({
+//   nombre: 'Juan',
+//   apellido: 'Pérez',
+//   edad: 22,
+//   domicilio: 'Saavedra 123',
+// });
 
 function crearInstanciaPersona(nombre, apellido, edad, domicilio) {
    // En este ejercicio debes crear una instancia de la clase construida en el ejercicio anterior.
@@ -31,6 +55,7 @@ function crearInstanciaPersona(nombre, apellido, edad, domicilio) {
    const persona = new Persona(nombre, apellido, edad, domicilio);
   return persona;
 }
+// console.log(crearInstanciaPersona('Juan', 'Pérez', 22, 'Saavedra 123'))//.toBeInstanceOf(Persona);
 
 function agregarMetodo() {
    // La función agrega un método "datos" a la clase "Persona".
@@ -41,7 +66,12 @@ function agregarMetodo() {
       return this.nombre + ", " + this.edad + " años";
     }
 }
-
+// agregarMetodo();
+//             const persona = new Persona('Juan', 'Pérez', 22, 'Saavedra 123');
+//             persona.nombre === 'Juan' && persona.edad === 22
+//                console.log(persona.datos())//.toBe('Juan, 22 años')
+//                console.log(persona.datos())//.toBe('undefined, undefined años');
+               
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    crearInstanciaPersona,

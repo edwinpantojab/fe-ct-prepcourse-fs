@@ -15,18 +15,16 @@ function invocarCallback(cb) {
    // [NOTA]: no debes reotrnar nada.
    // Tu código:
    cb();
-}
-//console.log()//.toHaveBeenCalled();
+};
 
 
-function operacionMatematica(num1, num2, cb) {
+function operacionMatematica(n1, n2, cb) {
    // En este ejercicio recibirás dos números y un callback.
    // El callback realiza una operación matemática, por lo que necesita de los dos números.
    // Retorna el resultado del callback pasándole como parámetros los números.
    // Tu código:
-   return cb(num1, num2,);
-}
-
+   return cb(n1, n2);
+};
 
 function sumarArray(arrayOfNumbers, cb) {
    // Recibes un arreglo de números y un callback.
@@ -38,8 +36,12 @@ function sumarArray(arrayOfNumbers, cb) {
       return acc + curr;
     },0);
     cb(sumaTotal);
-}
-//console.log(sumarArray(cb))//.toEqual([1, 2, 3, 4, 5]);
+};
+ sumarArray([1, 2, 3, 4, 5], function (sum) {
+      console.log(sum)//.toBe(15);   
+   });
+
+
 
 function forEach(array, cb) {
    // Recibes un arreglo y un callback.
@@ -49,8 +51,12 @@ function forEach(array, cb) {
    for(let i = 0; i < array.length; i++) {
       cb(array[i]);
    }
-
-}
+};
+// const nums = [];
+// forEach([6, 7, 8, 9, 10], function (num) {
+//    nums.push(num);
+// });
+// console.log(nums)//.toEqual([1, 2, 3, 4, 5]);
 
 function map(array, cb) {
    // Debes iterar sobre el arreglo, y cada elemento pasárselo como arguemento al callback.
@@ -62,6 +68,10 @@ function map(array, cb) {
    });
    return nuevoArray;
 }
+// const squares = map([1, 2, 3, 4, 5], function (num) {
+//    return num * num;
+// });
+// console.log(squares)//.toEqual([1, 4, 9, 16, 25]);
 
 function filter(arrayOfStrings) {
    // Debes identificar todos los elementos el arreglo que comiencen con la letra "a".
@@ -74,8 +84,18 @@ function filter(arrayOfStrings) {
     }
   }
   return nuevoArray;
-   
-}
+};
+// var array = [
+//    'abajo',
+//    'pera',
+//    'escalera',
+//    'alerta',
+//    'indice',
+//    'azteca',
+//    'arbol',
+//    'buzo',
+// ];
+// console.log(filter(array))//.toEqual(['abajo', 'alerta', 'azteca', 'arbol']);
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {

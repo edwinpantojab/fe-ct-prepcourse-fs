@@ -33,27 +33,27 @@ function numberOfCharacters(string) {
     }
     return result;
 }
-// //console.log(numberOfCharacters('sktpwrroqstkrpwwsqtqopwktsd'))/*.toEqual({
-//    s: 4,
-//    k: 3,
-//    t: 4,
-//    p: 3,
-//    w: 4,
-//    r: 3,
-//    o: 2,
-//    q: 3,
-//    d: 1,
-// });
-// //console.log(numberOfCharacters('adsjfdsfsfjsdjfhacabcsbajda'))/*.toEqual({
-//    a: 5,
-//    b: 2,
-//    c: 2,
-//    d: 4,
-//    f: 4,
-//    h: 1,
-//    j: 4,
-//    s: 5,
-// });
+console.log(numberOfCharacters('sktpwrroqstkrpwwsqtqopwktsd'))/*.toEqual({
+   s: 4,
+   k: 3,
+   t: 4,
+   p: 3,
+   w: 4,
+   r: 3,
+   o: 2,
+   q: 3,
+   d: 1,
+});*/
+console.log(numberOfCharacters('adsjfdsfsfjsdjfhacabcsbajda'))/*.toEqual({
+   a: 5,
+   b: 2,
+   c: 2,
+   d: 4,
+   f: 4,
+   h: 1,
+   j: 4,
+   s: 5,
+});*/
 
 function capToFront(string) {
    // Recibes un string con algunas letras en mayúscula y otras en minúscula.

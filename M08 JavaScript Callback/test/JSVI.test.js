@@ -26,7 +26,7 @@ describe('JAVASCRIPT VI', function () {
    });
 
    describe('operacionMatematica(n1, n2, cb)', function () {
-      it('Debe retornar el resultado del callback habiéndole pasado como arguemnto los números recibidos.', function () {
+      it('Debe retornar el resultado del callback habiéndole pasado como argumento los números recibidos.', function () {
          const cb = jest.fn();
          operacionMatematica(100, 20, cb);
          expect(cb).toHaveBeenCalled();

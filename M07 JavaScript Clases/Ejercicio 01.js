@@ -24,6 +24,25 @@ function crearUsuario() {
     return Usuario;
 
 }
+// const Usuario = crearUsuario();
+//             const user = new Usuario(
+//                'jssamuel',
+//                'Samuel',
+//                'samuel@email.com',
+//                'LoveJS'
+//             );
+//             console.log(user.usuario)//.toBe('jssamuel');
+//             console.log(user.nombre)//.toBe('Samuel');
+//             console.log(user.email)//.toBe('samuel@email.com');
+//             console.log(user.password)//.toBe('LoveJS');
+// const Usuario = crearUsuario();
+// const user = new Usuario(
+//    'jssamuel',
+//    'Samuel',
+//    'samuel@email.com',
+//    'LoveJS'
+// );
+// console.log(user.saludar())//.toBe('Hola, mi nombre es Samuel');
 
 function agregarMetodoPrototype(Usuario) {
    // Agrega un método al prototipo de "Usuario".
@@ -33,6 +52,12 @@ function agregarMetodoPrototype(Usuario) {
       return 'Hello World!';
     };
 }
+// function Test() {
+//    this.test = true;
+// }
+// agregarMetodoPrototype(Test);
+// const test = new Test();
+// console.log(test.saludar())//.toBe('Hello World!');
 
 function agregarStringInvertida() {
    // Agrega un método al prototipo de "String" que devuelva la misma cadena de caracteres, pero invertida.
@@ -47,7 +72,9 @@ function agregarStringInvertida() {
     };
        
    }
-
+   // agregarStringInvertida();
+   // const str = 'Hello';
+   // console.log(str.reverse())//.toBe('olleH');
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
